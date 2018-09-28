@@ -1,4 +1,4 @@
-package HelloSpringBoot;
+package Application.HelloSpringBoot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -16,11 +16,12 @@ public class HelloSpringBootController {
 
     @RequestMapping("hello")
     public String hell() {
-        return "hello Spring Boot";
+        return "hello Spring Boot！！！";
     }
 
     /**
-     * 启动方式1/2 本页main方法启动
+     * 启动方式1/2 本页main方法启动--不常用
+     * http://127.0.0.1:8080/hello
      * @param args
      */
     public static void main(String[] args) {
