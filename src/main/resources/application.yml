@@ -1,0 +1,7 @@
+server:
+  port: 8088
+  servlet-path: "*.html" # 高版本并不能直接写*.html。。。server-servlet-path对应的应该servlet-mapping中是url-pattern,而server-servlet-path不支持/*.action这种写法，而server-servlet-path如果要以.html方式访问则必须以/开头加上*.html的写法
+
+# 打印sql
+logging:
+  level: DEBUG
