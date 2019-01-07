@@ -1,5 +1,6 @@
 package Application.HelloSpringBoot;
 
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +26,9 @@ public class HelloSpringBootController {
      * @param args
      */
     public static void main(String[] args) {
-        SpringApplication.run(HelloSpringBootController.class, args);
+//        SpringApplication.run(HelloSpringBootController.class, args);
+        SpringApplication application = new SpringApplication(HelloSpringBootController.class);
+//        application.setBannerMode(Banner.Mode.OFF); // 关闭banner
+        application.run(args);
     }
 }
