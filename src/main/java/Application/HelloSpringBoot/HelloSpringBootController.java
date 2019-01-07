@@ -28,7 +28,7 @@ public class HelloSpringBootController {
     public static void main(String[] args) {
 //        SpringApplication.run(HelloSpringBootController.class, args);
         SpringApplication application = new SpringApplication(HelloSpringBootController.class);
-        application.setBannerMode(Banner.Mode.OFF); // 关闭banner
+//        application.setBannerMode(Banner.Mode.OFF); // 关闭banner
         application.run(args);
     }
 }
