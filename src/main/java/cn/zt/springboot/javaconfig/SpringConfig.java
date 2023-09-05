@@ -29,6 +29,8 @@ public class SpringConfig {
     public BoneCPDataSource getBoneCPDataSource(){
         BoneCPDataSource boneCPDataSource = new BoneCPDataSource();
         boneCPDataSource.setDriverClass(driverClassName);
+        System.out.println(driverClassName);
+        System.out.println(boneCPDataSource);
         return boneCPDataSource;
     }
 }
